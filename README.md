@@ -1,5 +1,5 @@
 # Financial Agent — Agentic AI
-
+**Live Demo** https://fintoran.streamlit.app/
 **Status:** Multi-agent prototype with auth, persistent memory, Docker deployment, and CI.
 A personal finance system where a Supervisor LLM routes each question to
 specialist sub-agents, which autonomously decide which tools to call — not
