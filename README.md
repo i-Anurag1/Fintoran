@@ -25,7 +25,6 @@ deployment, and an automated test suite.
 | **Testing** | — | `pytest` suite covering DB scoping, auth, finance tool logic, mocked market tools, memory isolation, and the supervisor's routing/handoff logic, wired into **GitHub Actions CI** on every push |
 | **UI** | Emoji-heavy, fixed two-column layout | Light, low-emoji, professional theme (`.streamlit/config.toml`); reasoning trace moved into an expander so it reads cleanly on both desktop and mobile |
 
-### A note on "works on my laptop but not on other devices/phones"
 
 Two real, common causes were fixed here:
 
@@ -229,14 +228,4 @@ financial-agent/
   proxy (Caddy/Nginx) with TLS in front of port 8501 if exposing it
   publicly.
 
-## What's Next
 
-- **Write-capable tools** — currently all tools are read-only (safe by
-  design); adding "set a budget" or "schedule a bill reminder" as callable
-  tools would need human-confirmation guardrails first
-- **Postgres** — swap SQLite for concurrent multi-user production load
-- **OCR receipt scanning, tax estimation, voice interface** — stretch goals, not started
-- **Real bank/UPI API integration** — currently CSV upload only
-- **Shared, cross-device sessions** — would need a real auth-token/cookie
-  layer (Streamlit's session state alone can't do this); out of scope for
-  a single-container demo deployment
