@@ -1,0 +1,19 @@
+services:
+  financial-agent:
+    build: .
+    container_name: financial-agent
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      - DB_PATH=/app/database/financial_agent.db
+      - CHROMA_PERSIST_DIR=/app/data/chroma_db
+    volumes:
+      - db_data:/app/database
+      - chroma_data:/app/data/chroma_db
+    restart: unless-stopped
+
+volumes:
+  db_data:
+  chroma_data:

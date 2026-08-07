@@ -1,0 +1,31 @@
+# --- UI / data ---
+streamlit>=1.38.0
+pandas>=2.2.0
+python-dotenv>=1.0.1
+
+# --- LLM + multi-agent orchestration (LangChain / LangGraph 1.0 stable API) ---
+groq>=0.11.0
+langchain>=1.0.0
+langgraph>=1.0.0
+langchain-core>=0.3.0
+langchain-groq>=0.2.0
+
+# --- Market data / news tools ---
+yfinance>=0.2.43
+ddgs>=9.0.0                 # maintained successor to the now-frozen duckduckgo-search
+
+# --- Persistent vector memory ---
+chromadb>=0.5.5
+# Modern statically-linked SQLite, so chromadb doesn't crash on machines with
+# an old system sqlite3 (older macOS Python, some Linux distros, some cloud
+# runtimes). Linux/macOS only — no prebuilt wheels for Windows, but Windows'
+# bundled Python already ships a modern-enough sqlite3, so it isn't needed
+# there (memory/vector_memory.py skips the shim automatically either way).
+pysqlite3-binary>=0.5.4; sys_platform != "win32"
+
+# --- Auth ---
+bcrypt>=4.1.0
+
+# --- Testing ---
+pytest>=8.0.0
+pytest-mock>=3.14.0
