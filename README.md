@@ -21,8 +21,7 @@
 **Status:** Multi-agent prototype with auth, persistent memory, Docker deployment, and CI.
 A personal finance system where a Supervisor LLM routes each question to
 specialist sub-agents, which autonomously decide which tools to call — not
-a fixed pipeline. Built as a PayPal Career Academy project; this revision
-hardens it into five production-shaped pieces: multi-agent orchestration
+a fixed pipeline, this revision hardens it into five production-shaped pieces: multi-agent orchestration
 (LangGraph), persistent semantic memory, multi-user authentication, Docker
 deployment, and an automated test suite.
 
