@@ -1,6 +1,22 @@
 # Financial Agent — Agentic AI
 
-**Live Demo** https://fintoran.streamlit.app/
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue" />
+  <img src="https://img.shields.io/badge/LangGraph-Agent%20Orchestration-purple" />
+  <img src="https://img.shields.io/badge/LangChain-1.0-green" />
+  <img src="https://img.shields.io/badge/Docker-Ready-blue" />
+  <img src="https://img.shields.io/badge/CI-GitHub%20Actions-black" />
+</p>
+
+<p align="center">
+  An intelligent personal finance platform powered by multi-agent AI,
+  semantic memory, financial analytics, and real-time market intelligence.
+</p>
+
+<p align="center">
+  🚀 Live Demo: https://fintoran.streamlit.app/
+</p>
+
 
 **Status:** Multi-agent prototype with auth, persistent memory, Docker deployment, and CI.
 A personal finance system where a Supervisor LLM routes each question to
@@ -90,6 +106,28 @@ e.g. for "should I buy AAPL or pay off my card?" it might route to the
 Market Agent for the price, then the Budget Agent for affordability, then
 synthesize one answer across both. Nobody hardcodes that sequence; the
 Supervisor LLM decides it per-question via structured-output tool routing.
+
+# 🛠️ Tech Stack
+
+
+| Category | Technology |
+|---|---|
+| Language | Python |
+| AI Framework | LangChain |
+| Agent Workflow | LangGraph |
+| LLM Provider | Groq |
+| Default Model | openai/gpt-oss-120b |
+| Memory Database | ChromaDB |
+| Database | SQLite |
+| Authentication | bcrypt |
+| Finance Data | yfinance |
+| News Search | ddgs |
+| Frontend | Streamlit |
+| Containerization | Docker |
+| Testing | Pytest |
+| CI/CD | GitHub Actions |
+
+
 
 ## Quick Start (local, no Docker)
 
