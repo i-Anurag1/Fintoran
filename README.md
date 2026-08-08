@@ -1,4 +1,4 @@
-# Financial Agent — Agentic AI
+  # Financial Agent — Agentic AI
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-blue" />
