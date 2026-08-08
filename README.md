@@ -266,4 +266,182 @@ financial-agent/
   proxy (Caddy/Nginx) with TLS in front of port 8501 if exposing it
   publicly.
 
+  ---
+
+## Troubleshooting
+
+### SQLite Version Error
+
+If you see:
+
+```bash
+RuntimeError: Your system has an unsupported version of sqlite3
+```
+
+The project automatically handles this using `pysqlite3-binary`.
+
+Make sure dependencies are installed correctly:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### API Key Error
+
+If the application shows LLM connection errors:
+
+Check your `.env` file:
+
+```env
+GROQ_API_KEY=your_api_key_here
+```
+
+Restart the application after updating environment variables.
+
+---
+
+### Docker Issues
+
+Rebuild containers after dependency changes:
+
+```bash
+docker compose down
+
+docker compose up --build
+```
+
+---
+
+## Dataset Support
+
+The project includes sample transaction datasets for testing and demonstration.
+
+Available datasets:
+
+| Dataset | File | Purpose |
+|---|---|---|
+| Kaggle Transactions | `data/kaggle_transactions.csv` | Real transaction analysis |
+| Synthetic Transactions | `data/sample_transactions.csv` | Testing anomaly and recurring payment detection |
+
+To convert a custom CSV dataset:
+
+```bash
+python convert_dataset.py input.csv output.csv
+```
+
+---
+
+## Example Queries
+
+Try asking Fintoran:
+
+```text
+Can I afford a ₹15000 phone this month?
+
+Analyze my spending habits.
+
+Where am I spending the most money?
+
+Show my monthly budget status.
+
+What is the current price of AAPL?
+
+Should I invest or save money?
+```
+
+---
+
+## Testing
+
+Run the complete test suite:
+
+```bash
+pytest
+```
+
+Tests cover:
+
+- Authentication flow
+- Database isolation
+- Finance calculations
+- Market data tools
+- Vector memory
+- Agent routing
+- Multi-agent workflow
+
+GitHub Actions runs tests automatically on every push and pull request.
+
+---
+
+## Project Structure
+
+```text
+financial-agent/
+
+├── core/
+│   ├── graph.py
+│   └── agents.py
+│
+├── auth/
+│   └── auth.py
+│
+├── memory/
+│   └── vector_memory.py
+│
+├── tools/
+│   ├── finance_tools.py
+│   └── market_tools.py
+│
+├── database/
+│   └── db.py
+│
+├── tests/
+│
+├── data/
+│   ├── kaggle_transactions.csv
+│   └── sample_transactions.csv
+│
+├── app.py
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## Future Improvements
+
+- Voice based financial assistant
+- Mobile application
+- Banking API integration
+- Advanced investment analysis
+- Portfolio management
+- More specialized AI agents
+- Cloud database migration
+
+---
+
+## Developer
+
+Built by Anurag Thakur
+
+B.Tech Computer Science Engineering
+
+Focus Areas:
+
+- Agentic AI
+- Backend Engineering
+- Distributed Systems
+- Financial Technology
+
+---
+
+## License
+
+This project is developed for educational and research purposes.
+
+### SQLite Version Error
 
