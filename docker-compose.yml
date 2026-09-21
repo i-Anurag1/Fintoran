@@ -1,0 +1,26 @@
+services:
+  fintoran:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      DB_PATH: /app/database/financial_agent.db
+      CHROMA_PERSIST_DIR: /app/data/chroma_db
+      CHROMA_DOCUMENTS_DIR: /app/data/document_chroma
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      GROQ_MODEL: ${GROQ_MODEL:-}
+      GROQ_FALLBACK_MODELS: ${GROQ_FALLBACK_MODELS:-}
+      FRED_API_KEY: ${FRED_API_KEY:-}
+      SEC_USER_AGENT: ${SEC_USER_AGENT:-}
+    volumes:
+      - db_data:/app/database
+      - chroma_data:/app/data/chroma_db
+      - document_chroma_data:/app/data/document_chroma
+      - private_documents:/app/data/private_documents
+    restart: unless-stopped
+
+volumes:
+  db_data:
+  chroma_data:
+  document_chroma_data:
+  private_documents:
