@@ -57,6 +57,5 @@ def safe_export_csv(transactions):
         return b''
     dangerous=('=', '+', '-', '@')
     for col in df.columns:
-        if df[col].dtype == object:
-            df[col]=df[col].map(lambda v: "'"+v if isinstance(v,str) and v.startswith(dangerous) else v)
+        df[col]=df[col].map(lambda v: "'"+v if isinstance(v,str) and v.startswith(dangerous) else v)
     return df.to_csv(index=False).encode('utf-8-sig')
