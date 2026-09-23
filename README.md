@@ -1,10 +1,3 @@
-<!--
-  NOTE FOR MAINTAINER: the original README used two different GitHub owners
-  (aditisaha1089 and i-Anurag1) and two different live URLs
-  (fintoranai.streamlit.app and fintoranagent.streamlit.app).
-  Both sets are preserved below. Please verify and keep only the correct ones.
--->
-
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=260&section=header&text=FINTORAN&fontSize=84&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Agentic%20AI%20Personal%20Finance%20Intelligence%20Platform&descAlignY=60&descSize=20" alt="Fintoran banner" width="100%"/>
