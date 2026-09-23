@@ -1,36 +1,53 @@
+<!--
+  NOTE FOR MAINTAINER: the original README used two different GitHub owners
+  (aditisaha1089 and i-Anurag1) and two different live URLs
+  (fintoranai.streamlit.app and fintoranagent.streamlit.app).
+  Both sets are preserved below. Please verify and keep only the correct ones.
+-->
+
 <div align="center">
 
-# F I N T O R A N
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=260&section=header&text=FINTORAN&fontSize=84&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Agentic%20AI%20Personal%20Finance%20Intelligence%20Platform&descAlignY=60&descSize=20" alt="Fintoran banner" width="100%"/>
 
-### Agentic AI Personal Finance Intelligence Platform
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=4F8CFF&center=true&vCenter=true&width=900&lines=Financial+Data+%E2%86%92+Intelligence;Agentic+AI+%2B+Deterministic+Analytics;Forecasting+%2B+Anomaly+Detection;RAG+%2B+Persistent+Memory;Private+%2B+Explainable+Personal+Finance" alt="Fintoran typing animation"/>
 
-**Turn raw financial data into structured intelligence, explanations, forecasts, anomaly signals, and actionable insights.**
+<br/>
+
+**Turn raw financial data into structured intelligence, explanations, forecasts, anomaly signals and actionable insights.**
+
+<br/>
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.64%2B-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![LangGraph](https://img.shields.io/badge/LangGraph-Agent_Orchestration-1C3C3C?style=for-the-badge)](https://langchain-ai.github.io/langgraph/)
 [![LangChain](https://img.shields.io/badge/LangChain-LLM_Tooling-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://www.langchain.com/)
 [![Groq](https://img.shields.io/badge/Groq-Inference-F55036?style=for-the-badge)](https://groq.com/)
+
 [![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
 [![Chroma](https://img.shields.io/badge/Chroma-Vector_Memory-5B21B6?style=for-the-badge)](https://www.trychroma.com/)
 [![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Pytest](https://img.shields.io/badge/Pytest-Tested-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)](https://pytest.org/)
+[![GitHub Actions](https://img.shields.io/badge/CI-GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/features/actions)
 
-<br>
+<br/>
 
-**[Live Demo](https://fintoranagent.streamlit.app/)**
-&nbsp;&nbsp;|&nbsp;&nbsp;
-**[GitHub Repository](https://github.com/i-Anurag1/Fintoran)**
+[![Live Demo](https://img.shields.io/badge/%E2%9C%A6%20LIVE%20DEMO-Open%20App-4F8CFF?style=for-the-badge&labelColor=0B1220)](https://fintoranagent.streamlit.app/)
+[![Source Code](https://img.shields.io/badge/%E2%9C%A6%20SOURCE-GitHub-8B5CF6?style=for-the-badge&labelColor=0B1220&logo=github)](https://github.com/i-Anurag1/Fintoran)
 
-<br>
+<br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=4F8CFF&center=true&vCenter=true&width=850&lines=Financial+Data+%E2%86%92+Intelligence;Agentic+AI+%2B+Deterministic+Analytics;Forecasting+%2B+Anomaly+Detection;RAG+%2B+Persistent+Memory;Private+%2B+Explainable+Personal+Finance" alt="Fintoran animation">
+<a href="#-vision">Vision</a> &nbsp;·&nbsp;
+<a href="#-capabilities">Capabilities</a> &nbsp;·&nbsp;
+<a href="#-architecture">Architecture</a> &nbsp;·&nbsp;
+<a href="#-agentic-design">Agents</a> &nbsp;·&nbsp;
+<a href="#-data-pipeline">Pipeline</a> &nbsp;·&nbsp;
+<a href="#-security">Security</a> &nbsp;·&nbsp;
+<a href="#-quick-start">Quick Start</a> &nbsp;·&nbsp;
+<a href="#-roadmap">Roadmap</a>
 
 </div>
 
----
-
-# FINTORAN
+<br/>
 
 ```text
 ███████╗██╗███╗   ██╗████████╗ ██████╗ ██████╗  █████╗ ███╗   ██╗
@@ -41,605 +58,559 @@
 ╚═╝     ╚═╝╚═╝  ╚═══╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
 ```
 
-> Fintoran is an agentic AI financial intelligence workspace designed to transform personal financial data into structured, explainable and actionable insights.
+> **Fintoran** is an agentic AI financial intelligence workspace that transforms personal financial data into structured, explainable and actionable insights.
 
-The platform combines:
+<br/>
 
-* deterministic financial analytics
-* agentic AI orchestration
-* persistent conversational memory
-* document-grounded RAG
-* transaction intelligence
-* budgeting
-* forecasting
-* anomaly detection
-* market research
-* secure account isolation
-* reproducible testing
-* containerized deployment
+## ✦ At a Glance
 
-The central design principle is simple:
+<div align="center">
 
-```text
-                    FINTORAN
-                       |
-          +------------+------------+
-          |                         |
-   DETERMINISTIC               AGENTIC AI
-   COMPUTATION                 REASONING
-          |                         |
-          v                         v
-  Exact numbers             Explanations
-  Aggregations              Planning
-  Forecasts                 Synthesis
-  Anomalies                 Retrieval
-  Metrics                   Financial dialogue
-          |                         |
-          +------------+------------+
-                       |
-                       v
-              FINANCIAL INTELLIGENCE
-```
+| 🧩 **10** | 🤖 **4** | 🌐 **3** | ✅ **49** | 🐍 **2** |
+|:---:|:---:|:---:|:---:|:---:|
+| Product modules | Specialist agents | External data providers | Passing tests | Python versions in CI |
 
----
+</div>
 
-# PRODUCT VISION
+<br/>
 
-Fintoran is not designed as a generic chatbot placed on top of a spreadsheet.
+## ✦ Vision
 
-It is designed as a financial intelligence layer.
+Fintoran is **not** a generic chatbot placed on top of a spreadsheet. It is a financial intelligence layer built on one central rule:
 
-```text
-┌────────────────────────────────────────────────────────────────────┐
-│                         FINTORAN WORKSPACE                         │
-├────────────────────────────────────────────────────────────────────┤
-│                                                                    │
-│  TRANSACTIONS       ANALYTICS        BUDGETS       INSIGHTS       │
-│       │                 │               │              │            │
-│       └─────────────────┴───────────────┴──────────────┘            │
-│                              │                                     │
-│                              ▼                                     │
-│                    FINANCIAL INTELLIGENCE                          │
-│                              │                                     │
-│              ┌───────────────┼───────────────┐                     │
-│              ▼               ▼               ▼                     │
-│          AI COPILOT       RAG/DOCS       MARKET RESEARCH           │
-│              │               │               │                     │
-│              └───────────────┼───────────────┘                     │
-│                              ▼                                     │
-│                       ACTIONABLE OUTPUT                            │
-│                                                                    │
-└────────────────────────────────────────────────────────────────────┘
-```
-
----
-
-# CORE CAPABILITIES
-
-| Module          | Capability                                                     |
-| --------------- | -------------------------------------------------------------- |
-| Overview        | Financial health summary and key metrics                       |
-| AI Copilot      | Agentic financial conversations                                |
-| Transactions    | Search, filtering, categorization and transaction intelligence |
-| Analytics       | Spending, income, category and trend analysis                  |
-| Budgets         | Budget tracking and financial planning                         |
-| Insights        | Automated financial observations                               |
-| Market Research | Market, macroeconomic and company research                     |
-| Documents / RAG | Grounded answers from uploaded financial documents             |
-| Memory          | Persistent conversation context                                |
-| Settings        | Account and application configuration                          |
-
----
-
-# SYSTEM ARCHITECTURE
+> **Numbers come from deterministic code. Language comes from the LLM.**
 
 ```mermaid
 flowchart TD
+    F(["🏦 FINTORAN"])
+    F --> D["⚙️ DETERMINISTIC COMPUTATION"]
+    F --> A["🧠 AGENTIC AI REASONING"]
 
-    U[User] --> UI[Streamlit Application]
+    D --> D1["Exact numbers"]
+    D --> D2["Aggregations"]
+    D --> D3["Forecasts"]
+    D --> D4["Anomalies"]
+    D --> D5["Metrics"]
 
-    UI --> AUTH[Authentication]
-    UI --> TX[Transaction Layer]
-    UI --> ANA[Analytics Engine]
-    UI --> AG[Agent Runtime]
-    UI --> RAG[RAG Pipeline]
-    UI --> MR[Market Research]
+    A --> A1["Explanations"]
+    A --> A2["Planning"]
+    A --> A3["Synthesis"]
+    A --> A4["Retrieval"]
+    A --> A5["Financial dialogue"]
 
-    AUTH --> DB[(SQLite)]
+    D1 & D2 & D3 & D4 & D5 --> I{{"💡 FINANCIAL INTELLIGENCE"}}
+    A1 & A2 & A3 & A4 & A5 --> I
+
+    classDef root fill:#4F8CFF,stroke:#1E3A8A,color:#fff,stroke-width:2px
+    classDef det fill:#DBEAFE,stroke:#3B82F6,color:#0B1220
+    classDef ai fill:#EDE9FE,stroke:#8B5CF6,color:#0B1220
+    classDef out fill:#10B981,stroke:#065F46,color:#fff,stroke-width:2px
+    class F root
+    class D,D1,D2,D3,D4,D5 det
+    class A,A1,A2,A3,A4,A5 ai
+    class I out
+```
+
+<br/>
+
+## ✦ Capabilities
+
+<div align="center">
+
+| | Module | What it does |
+|:---:|:---|:---|
+| 📊 | **Overview** | Financial health summary and key metrics |
+| 🤖 | **AI Copilot** | Agentic financial conversations |
+| 💳 | **Transactions** | Search, filtering, categorization and transaction intelligence |
+| 📈 | **Analytics** | Spending, income, category and trend analysis |
+| 🎯 | **Budgets** | Budget tracking and financial planning |
+| 💡 | **Insights** | Automated financial observations |
+| 🌍 | **Market Research** | Market, macroeconomic and company research |
+| 📄 | **Documents / RAG** | Grounded answers from uploaded financial documents |
+| 🧠 | **Memory** | Persistent conversation context |
+| ⚙️ | **Settings** | Account and application configuration |
+
+</div>
+
+<br/>
+
+## ✦ Architecture
+
+```mermaid
+flowchart TD
+    U(["👤 User"]) --> UI["🖥️ Streamlit Application"]
+
+    UI --> AUTH["🔐 Authentication"]
+    UI --> TX["💳 Transaction Layer"]
+    UI --> ANA["📈 Analytics Engine"]
+    UI --> AG["🤖 Agent Runtime"]
+    UI --> RAG["📄 RAG Pipeline"]
+    UI --> MR["🌍 Market Research"]
+    UI --> EXP["📤 Safe CSV Export"]
+
+    AUTH --> DB[("🗄️ SQLite")]
     TX --> DB
     ANA --> DB
 
-    AG --> SUP[LangGraph Supervisor]
+    AG --> SUP{{"🧭 LangGraph Supervisor"}}
+    AG --> LLM["⚡ Groq LLM"]
 
-    SUP --> PF[Personal Finance Agent]
-    SUP --> MA[Market Research Agent]
-    SUP --> DA[Document / RAG Agent]
-    SUP --> AA[Analytics Agent]
+    SUP --> PF["Personal Finance Agent"]
+    SUP --> MA["Market Research Agent"]
+    SUP --> DA["Document / RAG Agent"]
+    SUP --> AA["Analytics Agent"]
 
-    PF --> TOOLS[Deterministic Financial Tools]
-    MA --> PROVIDERS[External Data Providers]
-    DA --> CHROMA[(Chroma Vector Store)]
+    PF --> TOOLS["Deterministic Financial Tools"]
+    MA --> PROV["External Data Providers"]
+    DA --> CHROMA[("🧬 Chroma Vector Store")]
     AA --> ANA
 
-    AG --> LLM[Groq LLM]
-    RAG --> EMB[Embeddings]
-    EMB --> CHROMA
+    RAG --> EMB["Embeddings"] --> CHROMA
 
-    PROVIDERS --> SEC[SEC / XBRL]
-    PROVIDERS --> FRED[FRED]
-    PROVIDERS --> MARKET[Market Data]
+    PROV --> SEC["SEC / XBRL"]
+    PROV --> FRED["FRED"]
+    PROV --> MKT["Market Data"]
 
-    UI --> EXPORT[Safe CSV Export]
+    classDef ui fill:#4F8CFF,stroke:#1E3A8A,color:#fff
+    classDef store fill:#0F172A,stroke:#38BDF8,color:#E2E8F0
+    classDef agent fill:#EDE9FE,stroke:#8B5CF6,color:#0B1220
+    classDef ext fill:#FEF3C7,stroke:#F59E0B,color:#0B1220
+    class UI ui
+    class DB,CHROMA store
+    class SUP,PF,MA,DA,AA agent
+    class SEC,FRED,MKT,PROV ext
 ```
 
----
+<br/>
 
-# DATA FLOW
+## ✦ Agentic Design
 
-```text
-                         RAW INPUT
-                            |
-             +--------------+--------------+
-             |              |              |
-           CSV            PDF/TXT/MD     Conversation
-             |              |              |
-             v              v              v
-       IMPORT PIPELINE   DOCUMENT RAG   MEMORY
-             |              |              |
-             v              v              v
-         VALIDATE        CHUNK         CONTEXT
-             |              |              |
-             v              v              |
-         NORMALIZE      EMBED             |
-             |              |              |
-             v              v              |
-         ENRICH         CHROMA            |
-             |              |              |
-             +--------------+--------------+
-                            |
-                            v
-                    AGENT ORCHESTRATION
-                            |
-                +-----------+-----------+
-                |           |           |
-                v           v           v
-             ANALYZE     RETRIEVE    REASON
-                |           |           |
-                +-----------+-----------+
-                            |
-                            v
-                      VERIFY OUTPUT
-                            |
-                            v
-                    USER-FACING INSIGHT
-```
-
----
-
-# AGENTIC ARCHITECTURE
-
-Fintoran uses a supervisor-driven architecture instead of routing every request directly to a single LLM.
+Fintoran uses a **supervisor-driven architecture** instead of routing every request straight to a single LLM.
 
 ```mermaid
 flowchart LR
+    Q(["❓ User Query"]) --> S{{"🧭 Supervisor"}}
 
-    Q[User Query] --> S[Supervisor]
+    S -->|Personal finance| P["Personal Finance Agent"]
+    S -->|Market question| M["Market Research Agent"]
+    S -->|Documents| D["Document / RAG Agent"]
+    S -->|Analytics| A["Analytics Agent"]
 
-    S -->|Personal finance| P[Personal Finance Agent]
-    S -->|Market question| M[Market Research Agent]
-    S -->|Documents| D[Document / RAG Agent]
-    S -->|Analytics| A[Analytics Agent]
+    P --> T1["Financial Tools"]
+    M --> T2["Market Tools"]
+    D --> T3["Retrieval Tools"]
+    A --> T4["Analytics Tools"]
 
-    P --> T1[Financial Tools]
-    M --> T2[Market Tools]
-    D --> T3[Retrieval Tools]
-    A --> T4[Analytics Tools]
+    T1 & T2 & T3 & T4 --> V["✅ Validation"]
+    V --> R["✍️ Response Synthesis"]
+    R --> O(["👤 User"])
 
-    T1 --> V[Validation]
-    T2 --> V
-    T3 --> V
-    T4 --> V
-
-    V --> R[Response Synthesis]
-    R --> O[User]
+    classDef sup fill:#8B5CF6,stroke:#4C1D95,color:#fff,stroke-width:2px
+    classDef ok fill:#10B981,stroke:#065F46,color:#fff
+    class S sup
+    class V ok
 ```
 
-### Why a supervisor?
+### Life of a Query
 
-```text
-USER
- |
- v
-SUPERVISOR
- |
- +----> Personal Finance
- |
- +----> Market Research
- |
- +----> Documents / RAG
- |
- +----> Analytics
- |
- v
-VALIDATED RESULT
- |
- v
-SYNTHESIZED RESPONSE
+```mermaid
+sequenceDiagram
+    autonumber
+    actor U as 👤 User
+    participant UI as Streamlit UI
+    participant S as Supervisor
+    participant A as Specialist Agent
+    participant T as Deterministic Tools
+    participant L as Groq LLM
+
+    U->>UI: Ask a financial question
+    UI->>S: Query + memory context
+    S->>A: Route to the right specialist
+    A->>T: Compute or retrieve
+    T-->>A: Verified numbers + sources
+    A->>L: Explain and synthesize
+    L-->>A: Draft response
+    A-->>S: Validated result
+    S-->>UI: Grounded answer
+    UI-->>U: Insight with sources
 ```
 
-This separates:
+### Separation of Concerns
 
-```text
-COMPUTATION  !=  REASONING  !=  RETRIEVAL  !=  PRESENTATION
+| Layer | Responsibility | Owner |
+|:---|:---|:---|
+| **Computation** | Exact arithmetic, aggregation, forecasting | Deterministic Python |
+| **Reasoning** | Explanation, planning, synthesis | LLM agents |
+| **Retrieval** | Document and memory grounding | Chroma + retrievers |
+| **Presentation** | Rendering, sources, safe output | Streamlit |
+
+<br/>
+
+## ✦ Data Pipeline
+
+Imported data flows through a **validated pipeline**. Raw CSV rows are never inserted directly.
+
+```mermaid
+flowchart LR
+    RAW(["📥 RAW CSV"]) --> S1["🔎 Schema<br/>Detect"]
+    S1 --> S2["🧭 Column<br/>Mapping"]
+    S2 --> S3["🛡️ Validation"]
+    S3 --> S4["🧹 Normalization"]
+    S4 --> S5["✨ Enrichment"]
+    S5 --> S6["♻️ Duplicate<br/>Detection"]
+    S6 --> S7["💾 Persistence"]
+    S7 --> DB[("🗄️ SQLite")]
+
+    classDef stage fill:#DBEAFE,stroke:#3B82F6,color:#0B1220
+    classDef io fill:#4F8CFF,stroke:#1E3A8A,color:#fff
+    class S1,S2,S3,S4,S5,S6,S7 stage
+    class RAW,DB io
 ```
 
-Financial arithmetic stays deterministic.
+<div align="center">
 
-The LLM is used where language reasoning and synthesis provide value.
+| Ingestion | Processing | Delivery |
+|:---|:---|:---|
+| Schema detection | Date parsing | Preview before import |
+| Column mapping | Debit / credit handling | Import summaries |
+| Malformed row handling | Currency normalization | Provenance tracking |
+| Duplicate detection | Categorization and merchants | Safe export |
+| | Recurring transactions | |
 
----
+</div>
 
-# FINANCIAL DATA PIPELINE
+<br/>
 
-Fintoran treats imported financial data as a pipeline rather than directly inserting raw CSV rows into the database.
+## ✦ Analytics Engine
 
-```text
-RAW
- |
- v
-┌───────────────┐
-│ Schema Detect │
-└───────┬───────┘
-        v
-┌───────────────┐
-│ Column Mapping│
-└───────┬───────┘
-        v
-┌───────────────┐
-│ Validation    │
-└───────┬───────┘
-        v
-┌───────────────┐
-│ Normalization │
-└───────┬───────┘
-        v
-┌───────────────┐
-│ Enrichment    │
-└───────┬───────┘
-        v
-┌───────────────┐
-│ Duplicate     │
-│ Detection     │
-└───────┬───────┘
-        v
-┌───────────────┐
-│ Persistence   │
-└───────┬───────┘
-        v
-      SQLite
+The analytics layer is **intentionally deterministic**. The LLM never performs core financial arithmetic.
+
+```mermaid
+flowchart LR
+    DB[("🗄️ Database")] --> DC["⚙️ Deterministic<br/>Computation"]
+    DC --> VN["✅ Verified<br/>Numbers"]
+    VN --> LE["🧠 LLM<br/>Explanation"]
+
+    DC --> M1["Cash flow"]
+    DC --> M2["Spending trends"]
+    DC --> M3["Category distribution"]
+    DC --> M4["Budget utilization"]
+    DC --> M5["Savings patterns"]
+    DC --> M6["Forecasts"]
+    DC --> M7["Anomalies"]
+
+    classDef core fill:#10B981,stroke:#065F46,color:#fff
+    classDef ai fill:#8B5CF6,stroke:#4C1D95,color:#fff
+    class DC,VN core
+    class LE ai
 ```
 
-Supported pipeline concerns include:
+<br/>
 
-* schema detection
-* column mapping
-* dates
-* debit / credit handling
-* currency normalization
-* malformed rows
-* duplicate detection
-* transaction categorization
-* merchant information
-* recurring transactions
-* preview before import
-* import summaries
-* provenance
-* safe export
+## ✦ Forecasting
 
----
-
-# ANALYTICS ENGINE
-
-The analytics layer is intentionally deterministic.
-
-```text
-Transactions
-     |
-     +----> Income
-     |
-     +----> Expenses
-     |
-     +----> Categories
-     |
-     +----> Merchants
-     |
-     +----> Recurring Payments
-     |
-     +----> Time Series
-     |
-     v
-Financial Metrics
-     |
-     +----> Cash Flow
-     +----> Spending Trends
-     +----> Category Distribution
-     +----> Budget Utilization
-     +----> Savings Patterns
-     +----> Forecasts
-     +----> Anomalies
-```
-
-The LLM does not perform core financial arithmetic.
-
-```text
-DATABASE
-   |
-   v
-DETERMINISTIC COMPUTATION
-   |
-   v
-VERIFIED NUMBERS
-   |
-   v
-LLM EXPLANATION
-```
-
----
-
-# FORECASTING
-
-Fintoran supports financial forecasting through deterministic methods where sufficient data exists.
-
-```text
-Historical Transactions
-          |
-          v
-      Time Series
-          |
-          v
-     Model Selection
-          |
-    +-----+-----+
-    |     |     |
-    v     v     v
-  Naive Moving Weighted
-        Average Average
-    |     |     |
-    +-----+-----+
-          |
-          v
-     Holdout Check
-          |
-          v
-    Forecast + Range
-```
-
-Forecasts are presented with uncertainty only when the available data supports it.
-
----
-
-# ANOMALY DETECTION
-
-Fintoran analyzes multiple dimensions instead of treating every unusual amount as an anomaly.
-
-```text
-                    TRANSACTION
-                         |
-        +----------------+----------------+
-        |                |                |
-      Amount          Merchant         Category
-        |                |                |
-        +----------------+----------------+
-                         |
-                 Frequency Pattern
-                         |
-                 Recurring Pattern
-                         |
-                    Date / Time
-                         |
-                         v
-                 Anomaly Analysis
-                         |
-                         v
-                   Explanation
-```
-
-Potential signals include:
-
-* unusual amount
-* unusual merchant
-* unusual category
-* unusual frequency
-* recurring-payment deviation
-* unusual day
-* unusual time
-* historical behavior deviation
-
----
-
-# RAG ARCHITECTURE
-
-Conversation memory and document retrieval are separate systems.
+Forecasts use deterministic methods and are shown with uncertainty **only when the data supports it**.
 
 ```mermaid
 flowchart TD
+    H["📜 Historical Transactions"] --> TS["📉 Time Series"]
+    TS --> MS{"Model Selection"}
+    MS --> N["Naive"]
+    MS --> MA["Moving Average"]
+    MS --> WA["Weighted Average"]
+    N --> HO["🧪 Holdout Check"]
+    MA --> HO
+    WA --> HO
+    HO --> FR(["🔮 Forecast + Range"])
 
-    FILE[PDF / TXT / MD / CSV] --> INGEST[Document Ingestion]
-    INGEST --> CLEAN[Text Processing]
-    CLEAN --> CHUNK[Chunking]
-    CHUNK --> EMB[Embedding]
-    EMB --> STORE[(Chroma)]
+    classDef out fill:#4F8CFF,stroke:#1E3A8A,color:#fff
+    class FR out
+```
 
-    QUERY[User Query] --> RET[Retriever]
+<br/>
+
+## ✦ Anomaly Detection
+
+Fintoran analyzes **multiple dimensions** rather than flagging every unusual amount.
+
+```mermaid
+mindmap
+  root((Anomaly<br/>Analysis))
+    Amount
+      Unusual amount
+    Merchant
+      Unusual merchant
+    Category
+      Unusual category
+    Frequency
+      Unusual frequency
+    Recurring
+      Payment deviation
+    Timing
+      Unusual day
+      Unusual time
+    History
+      Behavior deviation
+```
+
+<br/>
+
+## ✦ RAG and Memory
+
+Conversation memory and document retrieval are **separate systems** that solve different problems.
+
+```mermaid
+flowchart TD
+    FILE["📎 PDF / TXT / MD / CSV"] --> ING["Document Ingestion"]
+    ING --> CLN["Text Processing"]
+    CLN --> CHK["Chunking"]
+    CHK --> EMB["Embedding"]
+    EMB --> STORE[("🧬 Chroma")]
+
+    QRY(["❓ User Query"]) --> RET["Retriever"]
     RET --> STORE
-    STORE --> META[Metadata + Source IDs]
-    META --> CTX[Retrieved Context]
-    CTX --> LLM[Agent / LLM]
-    LLM --> CIT[Citations + Answer]
+    STORE --> META["Metadata + Source IDs"]
+    META --> CTX["Retrieved Context"]
+    CTX --> LLM["⚡ Agent / LLM"]
+    LLM --> ANS(["✅ Answer + Citations"])
+
+    classDef store fill:#0F172A,stroke:#38BDF8,color:#E2E8F0
+    classDef out fill:#10B981,stroke:#065F46,color:#fff
+    class STORE store
+    class ANS out
 ```
 
-Document retrieval supports:
+<div align="center">
 
-* document ingestion
-* chunking
-* embeddings
-* Chroma storage
-* metadata
-* source identifiers
-* retrieval scores
-* document isolation
-* reindexing
-* duplicate handling
-* deletion
-* source-aware responses
+| | 🧠 Conversation Memory | 📄 Document RAG |
+|:---|:---|:---|
+| **Answers** | *"What did we discuss?"* | *"What does my document say?"* |
+| **Source** | User dialogue | User documents |
+| **Purpose** | Context recall | Grounded retrieval |
+| **Storage** | Memory layer (Chroma) | Document layer (Chroma) |
 
----
+</div>
 
-# MEMORY VS RAG
+**Retrieval supports:** ingestion · chunking · embeddings · metadata · source identifiers · retrieval scores · document isolation · reindexing · duplicate handling · deletion · source-aware responses
 
-```text
-                    FINTORAN
-                       |
-             +---------+---------+
-             |                   |
-             v                   v
-       CONVERSATION          DOCUMENT RAG
-          MEMORY                MEMORY
-             |                   |
-       User dialogue        User documents
-             |                   |
-       Context recall       Grounded retrieval
-             |                   |
-             v                   v
-        Chroma /             Chroma /
-        memory layer         document layer
+<br/>
+
+## ✦ Market Research
+
+The research layer is built around **external data provenance**.
+
+```mermaid
+flowchart TD
+    MQ(["🌍 Market Question"]) --> MRA{{"Market Research Agent"}}
+    MRA --> PR["Price Data"]
+    MRA --> CO["Company Data"]
+    MRA --> MC["Macro Data"]
+
+    PR --> MP["Market Provider"]
+    CO --> SEC["SEC / XBRL"]
+    MC --> FRED["FRED"]
+
+    MP --> SV["✅ Source Validation"]
+    SEC --> SV
+    FRED --> SV
+    SV --> DS["Data Synthesis"]
+    DS --> SP(["📚 Source Panel"])
+
+    classDef agent fill:#8B5CF6,stroke:#4C1D95,color:#fff
+    classDef out fill:#10B981,stroke:#065F46,color:#fff
+    class MRA agent
+    class SP out
 ```
 
-They solve different problems.
+<div align="center">
 
-```text
-MEMORY
-"What did we discuss?"
+| Market | Fundamentals | Macro and Provenance |
+|:---|:---|:---|
+| Quotes | Company fundamentals | Macroeconomic indicators |
+| Historical prices | SEC filings | Source provenance |
+| Returns | Earnings information | |
+| Volatility | | |
+| Drawdowns | | |
+| Moving averages and volume | | |
 
-RAG
-"What does my uploaded document say?"
+</div>
+
+<br/>
+
+## ✦ Security
+
+Fintoran treats financial data as **private application data**.
+
+```mermaid
+flowchart TD
+    AU(["🔐 Authenticated User"]) --> ISO{{"User Isolation"}}
+    ISO --> T["💳 Transactions"]
+    ISO --> M["🧠 Memory"]
+    ISO --> D["📄 Documents"]
+    T --> APP["🖥️ Application"]
+    M --> APP
+    D --> APP
+
+    classDef shield fill:#EF4444,stroke:#7F1D1D,color:#fff,stroke-width:2px
+    class ISO shield
 ```
 
----
+<div align="center">
 
-# MARKET RESEARCH
+| 🔑 Identity | 🧱 Data | 📁 Files | 🤖 AI |
+|:---|:---|:---|:---|
+| bcrypt authentication | Account-level isolation | Upload validation | Prompt injection defenses |
+| Environment-based secrets | Input validation | Upload limits | Private document isolation |
+| No API keys in source | Safe rendering | Path traversal protection | Controlled logging |
 
-The market research layer is designed around external data provenance.
+</div>
 
-```text
-                    MARKET QUESTION
-                           |
-                           v
-                 MARKET RESEARCH AGENT
-                           |
-        +------------------+------------------+
-        |                  |                  |
-        v                  v                  v
-      Price             Company             Macro
-        |               Data                 Data
-        |                  |                  |
-        v                  v                  v
- Market Provider       SEC/XBRL             FRED
-        |                  |                  |
-        +------------------+------------------+
-                           |
-                           v
-                    SOURCE VALIDATION
-                           |
-                           v
-                    DATA SYNTHESIS
-                           |
-                           v
-                     SOURCE PANEL
+### Safe CSV Export
+
+Values that begin with spreadsheet formula prefixes are neutralized so spreadsheet apps never execute them.
+
+| Raw value | Exported as |
+|:---|:---|
+| `=SUM(A1:A2)` | `'=SUM(A1:A2)` |
+| `+100` | `'+100` |
+| `-100` | `'-100` |
+| `@command` | `'@command` |
+
+<br/>
+
+## ✦ Reliability
+
+Agent execution is **failure-aware**. Provider failures never break core deterministic functionality.
+
+```mermaid
+stateDiagram-v2
+    [*] --> Request
+    Request --> Primary: LLM call with timeout
+    Primary --> Success: ok
+    Primary --> Retry: failure
+    Retry --> Success: ok
+    Retry --> Fallback: retries exhausted
+    Fallback --> Success: ok
+    Fallback --> SafeError: failure
+    Success --> [*]
+    SafeError --> [*]
 ```
 
-Research capabilities include:
+<br/>
 
-* quotes
-* historical prices
-* returns
-* volatility
-* drawdowns
-* moving averages
-* volume
-* company fundamentals
-* SEC filings
-* earnings information
-* macroeconomic indicators
-* source provenance
+## ✦ Testing and CI/CD
 
----
+```mermaid
+flowchart LR
+    DEV(["👩‍💻 Developer"]) --> GIT["Git Push"] --> GH["GitHub"] --> CI{{"GitHub Actions"}}
 
-# SECURITY MODEL
+    CI --> PY311["Python 3.11"]
+    CI --> PY312["Python 3.12"]
+    CI --> TEST["Pytest"]
+    CI --> COMP["Compile Check"]
+    CI --> DOCK["Docker Build"]
 
-Fintoran treats financial data as private application data.
+    PY311 & PY312 & TEST & COMP & DOCK --> ST["✅ Validation"]
+    ST --> DEP(["🚀 Deployment"])
 
-```text
-                    AUTHENTICATED USER
-                           |
-                           v
-                    USER ISOLATION
-                           |
-              +------------+------------+
-              |            |            |
-              v            v            v
-         Transactions    Memory      Documents
-              |            |            |
-              +------------+------------+
-                           |
-                           v
-                     APPLICATION
+    classDef ci fill:#2088FF,stroke:#0B3D91,color:#fff
+    classDef ok fill:#10B981,stroke:#065F46,color:#fff
+    class CI ci
+    class ST,DEP ok
 ```
 
-Security considerations include:
+<div align="center">
 
-* bcrypt authentication
-* account-level data isolation
-* input validation
-* upload validation
-* path traversal protection
-* upload limits
-* safe CSV export
-* formula injection protection
-* environment-based secrets
-* no API keys committed to source
-* private document isolation
-* prompt injection defenses
-* safe rendering
-* controlled logging
+| 🧪 Unit | 🔗 Integration | 🛡️ Security |
+|:---:|:---:|:---:|
+| Application behavior | Financial processing | Security-sensitive paths |
+| Regression cases | Import behavior | Upload and export safety |
 
----
+![Tests](https://img.shields.io/badge/pytest-49%20passed-10B981?style=for-the-badge&logo=pytest&logoColor=white)
+![Compile](https://img.shields.io/badge/compile-validated-10B981?style=for-the-badge)
+![Smoke](https://img.shields.io/badge/smoke%20test-passing-10B981?style=for-the-badge)
 
-# SAFE CSV EXPORT
+</div>
 
-Spreadsheet formula injection is explicitly handled during export.
+<br/>
 
-```text
-=SUM(A1:A2)
-+100
--100
-@command
+## ✦ Docker
+
+```mermaid
+flowchart LR
+    DF["📄 Dockerfile"] --> B["Build"] --> I["Install Dependencies"] --> NR["Non-Root Runtime"] --> HC["Healthcheck"] --> APP(["🖥️ Streamlit App"])
+
+    classDef out fill:#2496ED,stroke:#0B4F8A,color:#fff
+    class APP out
 ```
 
-becomes safely neutralized before export.
+Designed for **deterministic startup** · **non-root execution** · **health checks** · **application isolation** · **runtime environment variables** · **reproducible dependency installation**
 
-```text
-'=SUM(A1:A2)
-'+100
-'-100
-'@command
+<br/>
+
+## ✦ User Journey
+
+```mermaid
+journey
+    title Fintoran Financial Intelligence Journey
+    section Onboarding
+      Create account: 5: User
+      Authenticate: 5: User
+    section Data
+      Import transactions: 5: User
+      Validate dataset: 5: Fintoran
+      Normalize data: 5: Fintoran
+    section Intelligence
+      Analyze spending: 5: Fintoran
+      Detect anomalies: 5: Fintoran
+      Generate insights: 5: Fintoran
+      Forecast trends: 4: Fintoran
+    section AI
+      Ask Copilot: 5: User
+      Route to specialist: 5: Fintoran
+      Retrieve context: 5: Fintoran
+      Generate grounded response: 5: Fintoran
+    section Research
+      Research market: 4: User
+      Retrieve external data: 4: Fintoran
+      Present sources: 5: Fintoran
 ```
 
-This prevents exported values beginning with spreadsheet formula prefixes from being interpreted as formulas by spreadsheet applications.
+<br/>
 
----
+## ✦ Conceptual Data Ownership
 
-# APPLICATION STRUCTURE
+```mermaid
+erDiagram
+    USER ||--o{ TRANSACTION : owns
+    USER ||--o{ BUDGET : sets
+    USER ||--o{ MEMORY : accumulates
+    USER ||--o{ DOCUMENT : uploads
+    DOCUMENT ||--o{ CHUNK : "split into"
+```
+
+<br/>
+
+## ✦ Tech Stack
+
+<div align="center">
+
+| Layer | Technologies |
+|:---|:---|
+| **Frontend** | ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) |
+| **Application** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square) ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white) |
+| **AI** | ![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square) LLM reasoning · Agent orchestration · RAG |
+| **Data** | ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![Chroma](https://img.shields.io/badge/Chroma-5B21B6?style=flat-square) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) |
+| **External Data** | SEC / XBRL · FRED · Market data providers |
+| **Security** | bcrypt · Input validation · User isolation · Safe file handling |
+| **DevOps** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) Streamlit Community Cloud |
+| **Testing** | ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white) |
+
+</div>
+
+<br/>
+
+## ✦ Project Structure
 
 ```text
 Fintoran/
@@ -688,294 +659,14 @@ Fintoran/
 └── README.md
 ```
 
----
+<br/>
 
-# USER JOURNEY
+## ✦ Quick Start
 
-```mermaid
-journey
-    title Fintoran Financial Intelligence Journey
+<details open>
+<summary><b>1 · Clone and set up the environment</b></summary>
 
-    section Onboarding
-      Create account: 5: User
-      Authenticate: 5: User
-
-    section Data
-      Import transactions: 5: User
-      Validate dataset: 5: Fintoran
-      Normalize data: 5: Fintoran
-
-    section Intelligence
-      Analyze spending: 5: Fintoran
-      Detect anomalies: 5: Fintoran
-      Generate insights: 5: Fintoran
-      Forecast trends: 4: Fintoran
-
-    section AI
-      Ask Copilot: 5: User
-      Route to specialist: 5: Fintoran
-      Retrieve context: 5: Fintoran
-      Generate grounded response: 5: Fintoran
-
-    section Research
-      Research market: 4: User
-      Retrieve external data: 4: Fintoran
-      Present sources: 5: Fintoran
-```
-
----
-
-# TECHNICAL STACK
-
-```text
-FRONTEND
-└── Streamlit
-
-APPLICATION
-├── Python
-├── LangChain
-├── LangGraph
-└── Pydantic / typed application models
-
-AI
-├── Groq
-├── LLM-based reasoning
-├── Agent orchestration
-└── Retrieval-augmented generation
-
-DATA
-├── SQLite
-├── Chroma
-├── Pandas
-└── Financial datasets
-
-EXTERNAL DATA
-├── SEC / XBRL
-├── FRED
-└── Market data providers
-
-SECURITY
-├── bcrypt
-├── Input validation
-├── User isolation
-└── Safe file handling
-
-DEVOPS
-├── Docker
-├── GitHub Actions
-└── Streamlit Community Cloud
-
-TESTING
-└── Pytest
-```
-
----
-
-# PROJECT FLOW
-
-```mermaid
-graph TD
-
-    A[User] --> B[Streamlit UI]
-
-    B --> C{Request Type}
-
-    C -->|Transactions| D[Transaction Engine]
-    C -->|Analytics| E[Analytics Engine]
-    C -->|AI| F[LangGraph Supervisor]
-    C -->|Documents| G[RAG Pipeline]
-    C -->|Markets| H[Market Research]
-
-    D --> I[(SQLite)]
-    E --> I
-
-    F --> J[Specialist Agent]
-    J --> K[Tools / Retrieval]
-    K --> L[Validation]
-
-    G --> M[(Chroma)]
-    M --> L
-
-    H --> N[External Providers]
-    N --> L
-
-    I --> L
-    L --> O[Response]
-    O --> B
-```
-
----
-
-# ENGINEERING PRINCIPLES
-
-```text
-1. DETERMINISTIC FINANCIAL COMPUTATION
-2. EXPLICIT DATA PROVENANCE
-3. USER DATA ISOLATION
-4. AGENT SPECIALIZATION
-5. RETRIEVAL-GROUNDED ANSWERS
-6. VALIDATED EXTERNAL DATA
-7. SAFE FILE PROCESSING
-8. REPRODUCIBLE TESTING
-9. CONTAINERIZED DEPLOYMENT
-10. FINANCIAL SAFETY DISCLAIMERS
-```
-
----
-
-# RELIABILITY
-
-Fintoran is designed around failure-aware agent execution.
-
-```text
-LLM REQUEST
-    |
-    v
-TIMEOUT
-    |
-    +----> SUCCESS
-    |
-    +----> RETRY / BACKOFF
-              |
-              +----> SUCCESS
-              |
-              +----> FALLBACK MODEL
-                          |
-                          +----> SUCCESS
-                          |
-                          +----> SAFE ERROR
-```
-
-The architecture separates provider failure from core deterministic financial functionality.
-
----
-
-# TESTING
-
-The repository includes automated validation for the application.
-
-```text
-                TEST SUITE
-                    |
-        +-----------+-----------+
-        |           |           |
-        v           v           v
-      UNIT     INTEGRATION   SECURITY
-        |           |           |
-        +-----------+-----------+
-                    |
-                    v
-               PYTEST
-                    |
-                    v
-             CI VERIFICATION
-```
-
-Validation covers application behavior, financial processing, import behavior, security-sensitive paths and regression cases.
-
-Current project validation includes:
-
-```text
-49 PASSED
-```
-
-along with compile validation and application smoke testing.
-
-GitHub Actions also validates the project across supported Python environments and Docker build validation.
-
----
-
-# CI / CD
-
-```mermaid
-flowchart LR
-
-    DEV[Developer] --> GIT[Git Push]
-    GIT --> GH[GitHub]
-    GH --> CI[GitHub Actions]
-
-    CI --> PY311[Python 3.11]
-    CI --> PY312[Python 3.12]
-    CI --> TEST[Pytest]
-    CI --> COMPILE[Compile Check]
-    CI --> DOCKER[Docker Build]
-
-    PY311 --> STATUS[Validation]
-    PY312 --> STATUS
-    TEST --> STATUS
-    COMPILE --> STATUS
-    DOCKER --> STATUS
-
-    STATUS --> DEPLOY[Deployment]
-```
-
----
-
-# DOCKER
-
-The application is containerized for reproducible deployment.
-
-```text
-Dockerfile
-    |
-    v
-Build
-    |
-    v
-Install Dependencies
-    |
-    v
-Non-Root Runtime
-    |
-    v
-Healthcheck
-    |
-    v
-Streamlit Application
-```
-
-The container configuration is designed around:
-
-* deterministic startup
-* non-root execution
-* health checks
-* application isolation
-* runtime environment variables
-* reproducible dependency installation
-
----
-
-# CONFIGURATION
-
-Create a local environment file from the provided example:
-
-```bash
-cp .env.example .env
-```
-
-Windows PowerShell:
-
-```powershell
-Copy-Item .env.example .env
-```
-
-Example configuration:
-
-```env
-GROQ_API_KEY=your_groq_key
-GROQ_MODEL=llama-3.3-70b-versatile
-GROQ_FALLBACK_MODELS=llama-3.1-8b-instant
-FRED_API_KEY=your_fred_key
-SEC_USER_AGENT=Fintoran/1.0 your-email@example.com
-```
-
-Never commit `.env`.
-
-For Streamlit Community Cloud, configure secrets through the application settings rather than committing secret files to Git.
-
----
-
-# LOCAL DEVELOPMENT
+<br/>
 
 ```bash
 git clone https://github.com/i-Anurag1/Fintoran.git
@@ -984,17 +675,15 @@ cd Fintoran
 python -m venv .venv
 ```
 
-Activate the environment.
-
-Windows:
+Activate the environment:
 
 ```powershell
+# Windows
 .venv\Scripts\Activate.ps1
 ```
 
-Linux / macOS:
-
 ```bash
+# Linux / macOS
 source .venv/bin/activate
 ```
 
@@ -1004,224 +693,196 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Create configuration:
+</details>
+
+<details open>
+<summary><b>2 · Configure secrets</b></summary>
+
+<br/>
 
 ```bash
 cp .env.example .env
 ```
 
-Run:
+```powershell
+# Windows PowerShell
+Copy-Item .env.example .env
+```
+
+Example `.env`:
+
+```env
+GROQ_API_KEY=your_groq_key
+GROQ_MODEL=llama-3.3-70b-versatile
+GROQ_FALLBACK_MODELS=llama-3.1-8b-instant
+FRED_API_KEY=your_fred_key
+SEC_USER_AGENT=Fintoran/1.0 your-email@example.com
+```
+
+> ⚠️ **Never commit `.env`.** On Streamlit Community Cloud, configure secrets through the app settings instead of committing secret files.
+
+</details>
+
+<details open>
+<summary><b>3 · Run the app</b></summary>
+
+<br/>
 
 ```bash
 streamlit run app.py
 ```
 
----
+</details>
 
-# TESTING LOCALLY
+<details>
+<summary><b>4 · Run the tests</b></summary>
+
+<br/>
 
 ```bash
 pytest -q
-```
-
-Compile validation:
-
-```bash
 python -m compileall .
 ```
 
----
+</details>
 
-# DOCKER DEVELOPMENT
+<details>
+<summary><b>5 · Run with Docker</b></summary>
 
-Build:
+<br/>
 
 ```bash
 docker build -t fintoran .
-```
-
-Run:
-
-```bash
 docker run --env-file .env -p 8501:8501 fintoran
 ```
 
-Open:
+Then open `http://localhost:8501`.
 
-```text
-http://localhost:8501
-```
+</details>
 
----
+<br/>
 
-# REPOSITORY
-
-```text
-GitHub
-└── i-Anurag1/Fintoran
-    |
-    ├── Streamlit application
-    ├── Agentic AI architecture
-    ├── Financial analytics
-    ├── RAG
-    ├── Persistent memory
-    ├── Market research
-    ├── Security
-    ├── Tests
-    ├── Docker
-    └── CI
-```
-
-Repository:
-
-[https://github.com/i-Anurag1/Fintoran](https://github.com/i-Anurag1/Fintoran)
-
-Live application:
-
-[https://fintoranagent.streamlit.app/](https://fintoranagent.streamlit.app/)
-
----
-
-# PROJECT STATUS
-
-```text
-┌──────────────────────────────────────────────────────┐
-│                    FINTORAN STATUS                   │
-├──────────────────────────────────────────────────────┤
-│                                                      │
-│  Core Application              COMPLETE              │
-│  Agent Architecture            COMPLETE              │
-│  Financial Analytics           COMPLETE              │
-│  CSV Import Pipeline            COMPLETE              │
-│  Forecasting                    COMPLETE              │
-│  Anomaly Detection              COMPLETE              │
-│  RAG                            COMPLETE              │
-│  Persistent Memory              COMPLETE              │
-│  Market Research                COMPLETE              │
-│  Authentication                 COMPLETE              │
-│  Security Hardening             COMPLETE              │
-│  Automated Tests                PASSING               │
-│  Docker                         COMPLETE              │
-│  CI Validation                  PASSING               │
-│  Streamlit Deployment           LIVE                  │
-│                                                      │
-└──────────────────────────────────────────────────────┘
-```
-
----
-
-# DESIGN PHILOSOPHY
-
-```text
-              ┌─────────────────────┐
-              │      FINANCIAL      │
-              │        DATA         │
-              └──────────┬──────────┘
-                         │
-                         ▼
-              ┌─────────────────────┐
-              │    DETERMINISTIC    │
-              │      ANALYTICS      │
-              └──────────┬──────────┘
-                         │
-                         ▼
-              ┌─────────────────────┐
-              │       AGENTS        │
-              │   + RETRIEVAL       │
-              └──────────┬──────────┘
-                         │
-                         ▼
-              ┌─────────────────────┐
-              │      VERIFIED       │
-              │    INTELLIGENCE     │
-              └──────────┬──────────┘
-                         │
-                         ▼
-              ┌─────────────────────┐
-              │       HUMAN         │
-              │      DECISION       │
-              └─────────────────────┘
-```
-
-Fintoran does not attempt to replace financial judgment.
-
-It provides structured information, calculations, context and explanations so users can make informed financial decisions.
-
----
-
-# ROADMAP
-
-```text
-                 FINTORAN
-                    |
-        +-----------+-----------+
-        |                       |
-     CURRENT                 FUTURE
-        |                       |
-        v                       v
- Agentic AI              Advanced Evaluation
- Analytics               More Data Providers
- RAG                     Better Forecasting
- Memory                  Deeper Market Research
- Security                Expanded Document Intelligence
- Testing                 Personalization
-```
-
-Potential future work includes:
-
-* richer financial evaluation datasets
-* expanded market data integrations
-* stronger forecasting evaluation
-* additional document formats
-* richer portfolio analytics
-* expanded agent evaluation
-* provider-level caching improvements
-* advanced financial planning workflows
-
----
-
-# FINANCIAL SAFETY
-
-Fintoran is an information and analysis tool.
-
-Its outputs are not a substitute for professional financial, investment, tax or legal advice.
-
-Market and financial information may change over time. Users should independently verify important information before making financial decisions.
-
----
-
-# LICENSE
-
-See the repository for the applicable project license and terms.
-
----
+## ✦ Project Status
 
 <div align="center">
 
-## FINTORAN
+| Component | Status |
+|:---|:---:|
+| Core Application | ![Complete](https://img.shields.io/badge/COMPLETE-10B981?style=flat-square) |
+| Agent Architecture | ![Complete](https://img.shields.io/badge/COMPLETE-10B981?style=flat-square) |
+| Financial Analytics | ![Complete](https://img.shields.io/badge/COMPLETE-10B981?style=flat-square) |
+| CSV Import Pipeline | ![Complete](https://img.shields.io/badge/COMPLETE-10B981?style=flat-square) |
+| Forecasting | ![Complete](https://img.shields.io/badge/COMPLETE-10B981?style=flat-square) |
+| Anomaly Detection | ![Complete](https://img.shields.io/badge/COMPLETE-10B981?style=flat-square) |
+| RAG | ![Complete](https://img.shields.io/badge/COMPLETE-10B981?style=flat-square) |
+| Persistent Memory | ![Complete](https://img.shields.io/badge/COMPLETE-10B981?style=flat-square) |
+| Market Research | ![Complete](https://img.shields.io/badge/COMPLETE-10B981?style=flat-square) |
+| Authentication | ![Complete](https://img.shields.io/badge/COMPLETE-10B981?style=flat-square) |
+| Security Hardening | ![Complete](https://img.shields.io/badge/COMPLETE-10B981?style=flat-square) |
+| Automated Tests | ![Passing](https://img.shields.io/badge/PASSING-4F8CFF?style=flat-square) |
+| Docker | ![Complete](https://img.shields.io/badge/COMPLETE-10B981?style=flat-square) |
+| CI Validation | ![Passing](https://img.shields.io/badge/PASSING-4F8CFF?style=flat-square) |
+| Streamlit Deployment | ![Live](https://img.shields.io/badge/LIVE-F59E0B?style=flat-square) |
+
+</div>
+
+<br/>
+
+## ✦ Engineering Principles
+
+<div align="center">
+
+| # | Principle |
+|:---:|:---|
+| 1 | Deterministic financial computation |
+| 2 | Explicit data provenance |
+| 3 | User data isolation |
+| 4 | Agent specialization |
+| 5 | Retrieval-grounded answers |
+| 6 | Validated external data |
+| 7 | Safe file processing |
+| 8 | Reproducible testing |
+| 9 | Containerized deployment |
+| 10 | Financial safety disclaimers |
+
+</div>
+
+<br/>
+
+## ✦ Design Philosophy
+
+```mermaid
+flowchart TD
+    A["📊 Financial Data"] --> B["⚙️ Deterministic Analytics"]
+    B --> C["🤖 Agents + Retrieval"]
+    C --> D["✅ Verified Intelligence"]
+    D --> E(["🧑 Human Decision"])
+
+    classDef s fill:#DBEAFE,stroke:#3B82F6,color:#0B1220
+    classDef h fill:#10B981,stroke:#065F46,color:#fff,stroke-width:2px
+    class A,B,C,D s
+    class E h
+```
+
+Fintoran does not attempt to replace financial judgment. It provides structured information, calculations, context and explanations so users can make informed decisions.
+
+<br/>
+
+## ✦ Roadmap
+
+```mermaid
+timeline
+    title Fintoran Roadmap
+    section Current
+        Foundation : Agentic AI : Analytics : RAG : Memory
+        Hardening : Security : Testing : CI
+    section Future
+        Evaluation : Richer financial evaluation datasets : Expanded agent evaluation
+        Data : More market data integrations : Provider-level caching
+        Intelligence : Stronger forecasting evaluation : Richer portfolio analytics
+        Documents : Additional document formats
+        Planning : Advanced financial planning workflows
+```
+
+<br/>
+
+## ✦ Financial Safety
+
+> ⚠️ Fintoran is an **information and analysis tool**. Its outputs are not a substitute for professional financial, investment, tax or legal advice.
+>
+> Market and financial information changes over time. Please verify important information independently before making financial decisions.
+
+<br/>
+
+## ✦ Repository and Links
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-i--Anurag1%2FFintoran-181717?style=for-the-badge&logo=github)](https://github.com/i-Anurag1/Fintoran)
+[![Live App](https://img.shields.io/badge/Live_App-fintoranagent.streamlit.app-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://fintoranagent.streamlit.app/)
+
+</div>
+
+## ✦ License
+
+See the repository for the applicable project license and terms.
+
+<br/>
+
+<div align="center">
 
 ```text
-DATA
-  ↓
-ANALYZE
-  ↓
-RETRIEVE
-  ↓
-REASON
-  ↓
-VERIFY
-  ↓
-UNDERSTAND
+DATA  →  ANALYZE  →  RETRIEVE  →  REASON  →  VERIFY  →  UNDERSTAND
 ```
 
 ### Agentic AI for Personal Financial Intelligence
 
-**Built with Python, Streamlit, LangGraph, LangChain, Groq, SQLite, Chroma, Docker and Pytest.**
+**Built with Python · Streamlit · LangGraph · LangChain · Groq · SQLite · Chroma · Docker · Pytest**
 
-<br>
+<br/>
 
-[Live Demo](https://fintoranagent.streamlit.app/)
-  ·  
-[Source Code](https://github.com/i-Anurag1/Fintoran)
+[Live Demo](https://fintoranagent.streamlit.app/) &nbsp;·&nbsp; [Source Code](https://github.com/i-Anurag1/Fintoran)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" alt="footer" width="100%"/>
 
 </div>
